@@ -135,6 +135,48 @@ main {
     text-align: center;
 }
 
+.share_buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 150px;
+}
+
+.twitter_share {
+    border: none;
+    background-color: rgb(32, 135, 175);
+    width: fit-content;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.facebook_share {
+    border: none;
+    background-color: blue;
+    width: fit-content;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.pinterest_share {
+    border: none;
+    background-color: rgb(255, 0, 0);
+    width: fit-content;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.twitter_share:hover, .facebook_share:hover, .pinterest_share:hover {
+    cursor: pointer;
+}
+
 .sources_list {
     display: flex;
     flex-direction: column;
