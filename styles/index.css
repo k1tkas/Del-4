@@ -257,7 +257,6 @@ span {
 }
 
 .nav-phone {
-    display: flex;
     flex-direction: column;
     z-index: 10000;
     position: absolute;
