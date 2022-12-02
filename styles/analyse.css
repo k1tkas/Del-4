@@ -84,31 +84,59 @@ main {
     justify-self: center;
     align-items: center;
     justify-content: space-between;
-    padding-top: 200px;
 }
 
-.CMS_article {
+.subtitle {
+    text-align: center;
+    font-weight: 900;
+    margin-top: 50px;
+}
+
+.analysis_article {
+    color: white;
+    width: 60%;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-self: center;
-    justify-content: space-between;
-    width: 40%;
-    color: rgb(255, 255, 255);
-    font-size: 20px;
+    line-height: 25px;
 }
 
-.CMS_article > h2 {
-    font-size: 20px;
-    margin-bottom: 0px;
+.analysis_article > p {
+    text-align: left;
+    margin-top: 75px;
 }
 
-.CMS_article > p {
-    margin-bottom: 80px;
+.section_title {
+    margin-top: 150px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.nngroup_link {
+    text-decoration: none;
+    color: white;
+}
+
+.nngroup_link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.ackarlse_link {
+    color: white;
+}
+
+.ackarlse_link:hover {
+    cursor: pointer;
+}
+
+.analysis_img {
+    display: block;
     margin-top: 10px;
+    width: 30%;
+    align-self: center;
 }
 
-.CMS_info_grid {
+.analysis_table {
     display: grid;
     grid-template-columns: 150px 1fr 1fr 1fr 150px;
     color: rgb(255, 255, 255);
@@ -118,7 +146,7 @@ main {
     justify-self: center;
 }
 
-.CMS_info_grid > span {
+.analysis_table > span {
     border-style: solid;
     border-width: 1px;
     text-align: left;
@@ -132,6 +160,20 @@ main {
 .top_row {
     font-weight: 900;
     text-align: center;
+}
+
+.tilgjengelighetserklæring {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.tilgjengelighetserklæring:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .share_buttons {
@@ -191,22 +233,6 @@ main {
     cursor: pointer;
 }
 
-.sources_list {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.sources_list > a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    margin-bottom: 10px;
-}
-
-.sources_list > a:hover {
-    text-decoration: underline;
-    cursor: pointer;
-}
 
 .article_cards_section {
     display: flex;
@@ -296,10 +322,6 @@ footer {
     align-items: center;
 }
 
-.footer_when_no_content {
-    position: absolute;
-    bottom: 0;
-}
 
 .footer_address, .company_email, .social_media, .last_updated{
     color: rgb(255, 255, 255);
@@ -388,35 +410,34 @@ footer {
         width: 912px;
     }
 
-    .sources_list {
-        text-align: center;
-        width: 912px;
+    .analysis_img {
+        width: 100%;
+    }
+
+    .analysis_table {
+        width: 100%;
         font-size: 24px;
+        overflow-y: hidden;
+        overflow-x: scroll;
+    }
+
+    .section_title {
+        font-size: 48px;
+    }
+
+    .analysis_article {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .tilgjengelighetserklæring {
+        font-size: 40px;
     }
 
     h3 {
         text-align: center;
         justify-self: center;
         width: 100%;
-    }
-
-    .CMS_article > h2 {
-        font-size: 40px;
-    }
-
-    .CMS_info_grid {
-        width: 80%;
-        font-size: 20px;
-        overflow-y: hidden;
-        overflow-x: scroll;
-    }
-
-    .CMS_article {
-        width: 660px;
-        font-size: 36px;
-        line-height: 40px;
-        margin-left: 0;
-        margin-right: 0;
     }
 
     .article_cards_section {
@@ -502,43 +523,34 @@ footer {
         width: 412px;
     }
 
-    .sources_list {
-        text-align: center;
-        width: 412px;
-    }
-
-    .sources_list > a {
-        width: 400px;
-        font-size: 12px;
-    }
-
-    .sources_list > a {
-        margin-bottom: 40px;
-    }
-
     h3 {
         text-align: center;
         justify-self: center;
         width: 100%;
     }
 
-    .CMS_info_grid {
-        width: 80%;
-        font-size: 12px;
-        overflow-y: hidden;
+    .analysis_article {
+        line-height: 32px;
+        font-size: 16px;
+    }
+
+    .section_title {
+        font-size: 20px;
+    }
+
+    .analysis_img {
+        width: 100%;
+    }
+
+    .analysis_table {
+        width: 100%;
+        font-size: 16px;
+        overflow-y: scroll;
         overflow-x: scroll;
     }
 
-    .CMS_article {
-        width: 360px;
-        font-size: 14px;
-        line-height: 22px;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .CMS_article > h2 {
-        font-size: 24px;
+    .tilgjengelighetserklæring {
+        font-size: 20px;
     }
 
     .article_cards_section {
@@ -601,6 +613,3 @@ footer {
         font-size: 12px;
     }
 }
-
-
-

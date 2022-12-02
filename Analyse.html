@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="no">
     <head>
         <title>Analyse</title>
 
         <meta httpEquiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-        <link rel="stylesheet" href="styles/innholdsside.css">
+        <link rel="stylesheet" href="styles/analyse.css">
 
+        <script src="ham.js" type="text/javascript"></script>
         <script src="https://kit.fontawesome.com/742c3d95c2.js" crossorigin="anonymous"></script>
 
         <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
@@ -18,11 +19,13 @@
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="COMPANY - Analyse" />
         <meta name="twitter:description" content="Analysis of the COMPANY website." />
+        <meta name="twitter:image" content="https://k1tkas.github.io/Del-4/bildebank/isaac-smith-6EnTPvPPL6I-unsplash.jpg" />
 
         <meta property="og:url"                content="https://k1tkas.github.io/Del-4/Analyse.html" />
         <meta property="og:type"               content="article" />
         <meta property="og:title"              content="COMPANY - Analyse" />
         <meta property="og:description"        content="Analysis of COMPANY website" />
+        <meta property="og:image"              content="https://k1tkas.github.io/Del-4/bildebank/isaac-smith-6EnTPvPPL6I-unsplash.jpg" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,7 +39,21 @@
                 <!-- Logo laget selv via logo.com -->
                 <a href="index.html" class="logo"><img class="logo" src="LOGO/lowreslogo.png" alt="IMG"></a>
 
-                <nav>
+                <h1>Analyse</h1>
+
+                <nav class="nav-desktop">
+                    <a class="nav_link" href="index.html">Hjem</a>
+                    <a class="nav_link" href="UU_vs_SEO.html">UU vs SEO</a>
+                    <a class="nav_link" href="CMS.html">CMS</a>
+                    <a class="nav_link" href="Analyse.html">Analyse</a>
+                    <a class="nav_link" href="kontakt_oss.html">Kontakt Oss</a>
+                </nav>
+
+                <div class="ham-icon">
+                    <a href="#" id="open-yes"></a>
+                </div>
+                <nav id="main-menu" class="nav-phone">
+                    <a class="nav_link" href="#" id="ham-close">X</a>
                     <a class="nav_link" href="index.html">Hjem</a>
                     <a class="nav_link" href="UU_vs_SEO.html">UU vs SEO</a>
                     <a class="nav_link" href="CMS.html">CMS</a>
@@ -47,13 +64,184 @@
             </header>
 
             <main>
-                <div class="content_soon">
-                    <h2>
-                        CONTENT COMING SOON
-                    </h2>
+                <div class="analysis_article">
+                    <h2 class="subtitle">SEO, UU og Heuristisk evaluering av nettstedet</h2>
+
+                    <h2 class="section_title">SEO</h2>
+
+                    <p>For evaluering av SEO bruker jeg Google Lighthouse. Jeg kjører lighthouse, ser på scoren, hva som er bra, hva som er dårlig, og drar konklusjoner ut i fra det.</p>
+
+                    <img class="analysis_img" src="analysebilder/image13.png" alt="image of initial SEO score">
+
+                    <p>Den initielle SEO scoren til hjemmesiden er 92. Nedenfor ser du alle de positive trekkene til siden:</p>
+
+                    <img class="analysis_img" src="analysebilder/image7.png" alt="image of passed SEO audits">
+
+                    <p>Det eneste som holdt siden tilbake fra en bedre score var manglende meta description tag.</p>
+
+                    <img class="analysis_img" src="analysebilder/image12.png" alt="image of missing meta description tag">
+
+                    <p>Etter å ha lagt til meta description tag gikk SEO scoren til 100, som du kan se nedenfor.</p>
+
+                    <img class="analysis_img" src="analysebilder/image6.png" alt="image of 100 SEO score">
+                    <p>UU og SEO siden hadde en score på 88, så jeg skjønte at her var det mer en bare en manglende meta tag.</p>
+
+                    <img class="analysis_img" src="analysebilder/image3.png" alt="image of 88 SEO score">
+
+                    <p>Problemet viste seg å være at kildelista var for vanskelig å navigere på telefon fordi linkene var for nærme hverandre.</p>
+
+                    <img class="analysis_img" src="analysebilder/image11.png" alt="image of reason for bad SEO score">
+
+                    <img class="analysis_img" src="analysebilder/image14.png" alt="image of improved SEO score">
+
+                    <p>Etter å ha lagt til litt margin mellom linkene, løste problemet seg og SEO scoren gikk til 92. Det eneste som manglet var meta description som på hjemmesiden. Jeg skjønte nå at meta description kom til å dukke opp  gang på gang, så jeg la det til på alle sidene. Jeg justerte også kildelista under CMS artikkelen siden den hadde samme format. Etter disse endringene oppnådde alle sidene 100 i SEO score, og jeg gikk videre til UU. </p>
+
+                    <h2 class="section_title">UU</h2>
+
+                    <img class="analysis_img" src="analysebilder/image2.png" alt="image of low accessibility score">
+
+                    <img class="analysis_img" src="analysebilder/image4.png" alt="image of low accessibility score">
+
+                    <img class="analysis_img" src="analysebilder/image1.png" alt="image of reason for low accessibility score">
+
+                    <p>Initiell UU score er ganske skuffende. Hovedproblemet var at knappene jeg brukte til å dele på sosiale mediae hadde ingen faktisk tekst i seg, bare i elementer i form av ikoner fra FontAwesome. Jeg løste dette ved å legge til tekst i button, sette font size til 0 slik at det ikke vises, og deretter style ikonet separat.</p>
+
+                    <img class="analysis_img" src="analysebilder/image9.png" alt="image of low contrast on buttons">
+
+                    <p>Neste problem var at det var lite kontrast mellom Twitter og Pinterest knappene og den daværende gråe bakgrunnen. Her var det jo bare å gjøre knappene mørkere, men det var litt utfordrende å beholde en blåfarge som ligner Twitter sin og fortsatt ha god nokk kontrast.</p>
+
+                    <img class="analysis_img" src="analysebilder/image3.png" alt="image of improved accessibility score">
+
+                    <p>Etter alle endringene gikk UU scoren til opp til 88, som jeg var fornøyd med.</p>
+
+                    <h2 class="section_title">Heuristisk evaluering</h2>
+
+                    <p>For å gjennomføre heuristisk evaluering, leste jeg gjennom <a class="nngroup_link" href="https://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank" rel="norefferer noopener">de 10 tommelfingelreglene fra Nielsen Norman group</a> og plukket ut 4 som jeg syntes passet til min nettside. Disse er #3: User control and freedom, #4: Consistency and standards, #6: Recognition rather than recall, og #8: Aesthetic and minimalist design. Resten av reglene mente jeg selv var urelevante til innholdet på min nettside.</p>
+
+                    <p>#3: User control and freedom
+                        <br><br> "Users often perform actions by mistake. They need a clearly marked 'emergency exit' to leave the unwanted action without having to go through an extended process.
+                        <br>When it's easy for people to back out of a process or undo an action, it fosters a sense of freedom and confidence. Exits allow users to remain in control of the system and avoid getting stuck and feeling frustrated."
+                        <br>Siden har ingen kompliserte funksjoner utenom hamburgermenyen (en modifisert versjon av <a class="ackarlse_link" href="https://github.com/ackarlse/webutvikling2022/blob/main/responsivt-design/javascript/ham.js" target="_blank" rel="norefferer noopener">ackarlses meny</a>): den tar opp hele skjermen og kan oppleves som overveldende for noen brukere. Menyen er markert med en stor X på toppen for å indikere at denne knappen lukker menyen. X er den tradisjonelle måten å markere exit knapper på i data og bør være lett gjennkjennelig.
+                    </p>
+
+                    <p>#4: Consistency and standards
+                        <br> <br>"Users should not have to wonder whether different words, situations, or actions mean the same thing. Follow platform and industry conventions.
+                        <br>Jakob's law states that people spend most of their time using digital products other than yours. Users' experiences with those other products set their expectations. Failing to maintain consistency may increase the users' cognitive load by forcing them to learn something new."
+                        <br>Dette kan tilegnes til veldig mye, men jeg tengte på det som hvordan brukeren interagerer med nettsiden, ala navigasjon. Navigasjon er logisk og har lignende layout som andre sider med lignende innhold (e.g artikler).  Den er også lik over hele nettstedet. Alle sidene på nettstedet har samme flyt: knapper og f.eks kildelisten på artikkelsidene er på samme sted. Artikkelkortene er standardisert og lik uansett hvor du er.
+                    </p>
+
+                    <p>#6: Recognition rather than recall
+                        <br><br>"Minimize the user's memory load by making elements, actions, and options visible. The user should not have to remember information from one part of the interface to another. Information required to use the design (e.g. field labels or menu items) should be visible or easily retrievable when needed.
+                        <br>Humans have limited short-term memories. Interfaces that promote recognition reduce the amount of cognitive effort required from users."
+                        <br>Navigasjon, flyt, og elementer som artikkelkort er standardisert og ligger på samme sted uansett hvor du er. Informasjonen presentert i tabellene kan fordøyes uten hjelp fra selve artikkelen. Alle navigasjonselementer er tydelig utmerket og skiller seg fra resten av innholdet.
+                    </p>
+
+                    <p>#8: Aesthetic and minimalist design
+                        <br><br>"Interfaces should not contain information that is irrelevant or rarely needed. Every extra unit of information in an interface competes with the relevant units of information and diminishes their relative visibility.
+                        <br>This heuristic doesn't mean you have to use a flat design — it's about making sure you're keeping the content and visual design focused on the essentials. Ensure that the visual elements of the interface support the user's primary goals."
+                        <br>Nettsiden er kanskje litt kjedelig når det gjelder visuell design, men den er effektiv og tar ikke fokus vekk fra innholdet. Designet har god kontrast, flyter fint, er lesbar, og enkelt. Jeg gjorde 1 endring når jeg evaluerte siden med denne regelen i bakhodet, og det var å gjøre artiklene tynnere; før var de veldig bred, og det egner seg ikke til bra lesbarhet.
+                    </p>
+
+                    <h2 class="section_title">Oppsummering - Tabell</h2>
+
+                    <div class="analysis_table">
+                        <span class="top_row">Kategori</span>
+                        <span class="top_row">Resultatt</span>
+                        <span class="top_row">Grunn</span>
+                        <span class="top_row">Tiltak</span>
+                        <span class="top_row">Nytt resultatt</span>
+                        <span>SEO</span>
+                        <span>88-92</span>
+                        <span>
+                            Manglende meta description
+                            <br><br>
+                            Links i kildeliste for liten og vanskelig å treffe
+                        </span>
+                        <span>
+                            La til meta description på alle sider
+                            <br><br>
+                            Justerte mellomrom mellom links i kildeliste
+                        </span>
+                        <span>100</span>
+                        <span>UU</span>
+                        <span>67-68</span>
+                        <span>
+                            Sosiale media knapper manglet tekst (ikke bra for skjermlesere)
+                            <br><br>
+                            Sosiale media knapper hadde lite kontrast i forhold til bakgrunn og hvite ikoner
+                        </span>
+                        <span>
+                            La til usynlig tekst ved å sette font size til 0, stylet ikon separat for å bevare utsene
+                            <br><br>
+                            Justerte bakgrunnsfargen på sosiale media knapper
+                        </span>
+                        <span>88</span>
+                        <span>Heuristisk</span>
+                        <span>Middels-positiv</span>
+                        <span>
+                            Nettsiden er “basic” og har få avanserte funksjoner
+                            <br><br>
+                            Nettsiden ble designet med gode designprinsipper i bakhodet (kontrast, lesbarhet, flyt)
+                        </span>
+                        <span>
+                            Justerte bredden på flere artikler slik at det er litt mer lesbar
+                            <br><br>
+                            Gjorde artikkelkort rekkefølge uniform på alle sider slik at artikkelen som er lengst til venstre i nav meny også er kortet lengst til venstre
+                        </span>
+                        <span>Positiv</span>
+                    </div>
+
+                    <h2 class="section_title">Tilgjengelighetserklæring</h2>
+
+                    <p>I tillegg til det som står i tilgjengelighetserklæringen så møter nettsiden krav 1.4.6 Contrast (Enhanced) og krav 2.4.8 Location, 2 AAA krav.</p>
+
+                    <p>"1.4.6 Contrast (Enhanced) - Level AAA
+                        <br><br>The visual presentation of text and images of text has a contrast ratio of at least 7:1, except for the following:
+                        <br><br>
+                        Large Text: Large-scale text and images of large-scale text have a contrast ratio of at least 4.5:1;
+                        <br><br>
+                        Incidental: Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement.
+                        <br><br>
+                        Logotypes: Text that is part of a logo or brand name has no contrast requirement".
+                        <br><br>Dette kravet blir møtt siden nettsiden har et kontrastforhold på 21:1.
+                    </p>
+
+                    <p>"2.4.8 Location - Level AAA
+                        <br><br>Information about the user's location within a set of Web pages is available".
+                        <br><br>Nettsiden møter dette kravet ved å fortelle deg hvor du er via en tittel (identisk til sidens navn i nav menyen) på toppen av siden.
+                    </p>
+
+                    <a class="tilgjengelighetserklæring" href="https://docs.google.com/spreadsheets/d/1HV4jsCgNVUbiy3_MAVqjvg2HxLBzEOft/edit?usp=sharing&ouid=106117791951650917647&rtpof=true&sd=true" target="_blank" rel="norefferer noopener">Link til tilgjengelighetserklæring</a>
                 </div>
+
+                <div class="share_buttons">
+                    <button class="twitter_share"><i class="fa-brands fa-twitter"></i>twitter share button</button>
+
+                    <button class="facebook_share"><i class="fa-brands fa-facebook"></i>facebook share button</button>
+
+                    <button class="pinterest_share"><i class="fa-brands fa-pinterest"></i>pinterest share button</button>
+                </div>
+
                 <h3>Flere Artikler</h3>
-                <div id="article_cards_section">
+                <div class="article_cards_section">
+
+                    <div class="article_card">
+
+                        <div><img src="bildebank/200x300.png" alt="blank image"></div>
+
+                        <div class="article_card_text">
+
+                            <p class="article_headline">UU vs SEO</p>
+
+                            <p class="article_intro">
+                                UU og SEO er to begrep man må være kjent med når man designer nettsider og andre digitale platformer.
+                            </p>
+
+                            <a class="article_link" href="UU_vs_SEO.html">Les mer</a>
+
+                        </div>
+
+                    </div>
 
                     <div class="article_card">
 
@@ -64,7 +252,7 @@
                             <p class="article_headline">CMS</p>
 
                             <p class="article_intro">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Et CMS (Content Management System) er et program som håndterer digitalt innhold og publiserer det til en nettside.
                             </p>
 
                             <a class="article_link" href="CMS.html">Les mer</a>
@@ -72,23 +260,6 @@
                         </div>
                     </div>
 
-                        <div class="article_card">
-
-                            <div><img src="bildebank/200x300.png" alt="IMG"></div>
-
-                            <div class="article_card_text">
-
-                                <p class="article_headline">UU vs SEO</p>
-
-                                <p class="article_intro">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </p>
-
-                                <a class="article_link" href="UU_vs_SEO.html">Les mer</a>
-
-                            </div>
-
-                        </div>
                 </div>
 
             </main>
@@ -107,10 +278,6 @@
 
                 <p class="social_media">
                     Social media links
-                </p>
-
-                <p class="last_updated">
-                    Sist Oppdatert <span>28.9.22</span>
                 </p>
 
             </footer>
